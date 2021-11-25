@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "du-env-plugin",
+	"description": "基于vue3.x版本的chrome插件",
+	"version": "1.0.0",
+	"browser_action": {
+		"default_title": "du-env-plugin",
+		"default_icon": "assets/images/icon48.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [],
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"icons": {
+		"16": "assets/images/icon16.png",
+		"48": "assets/images/icon48.png",
+		"128": "assets/images/icon128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://*.taobao.com/*"],
+			"css": ["css/content.css"],
+			"js": ["js/content.js"],
+			"run_at": "document_idle"
+		}
+	],
+	"web_accessible_resources": ["js/inject.js"]
+}
