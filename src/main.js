@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import AltihexDesignVue from "altihex-design"
+import 'altihex-design/dist/altihex.css'
 
-createApp(App).mount('#app')
+import app from './App'
+app.use(AltihexDesignVue)
+
+console.log(!23)
+
+createApp(app).mount('#app')
