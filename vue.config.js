@@ -2,7 +2,7 @@
  * @Author: migor
  * @Date: 2021-11-25 20:49:22
  * @LastEditors: migor
- * @LastEditTime: 2021-11-25 20:58:31
+ * @LastEditTime: 2021-11-25 21:41:07
  * @Description: file content
  */
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -63,5 +63,12 @@ module.exports = {
 		extract: {
 			filename: "css/[name].css"
 		}
+	},
+	chainWebpack: config => {
+		if (process.env.NODE_ENV === 'production') {
+			config.output.filename('js/[name].js').end()
+			config.output.chunkFilename('js/[name].js').end()
+		}
 	}
 }
+

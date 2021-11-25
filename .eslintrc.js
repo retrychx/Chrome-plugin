@@ -2,17 +2,20 @@
  * @Author: migor
  * @Date: 2021-11-25 20:59:59
  * @LastEditors: migor
- * @LastEditTime: 2021-11-25 21:14:10
+ * @LastEditTime: 2021-11-25 21:39:39
  * @Description: file content
  */
 module.exports = {
   root: true,
+  globals: {
+    chrome: true,
+  },
   env: {
     node: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/standard'
+    "eslint:recommended",
+    "plugin:vue/recommended"
   ],
   parserOptions: {
     parser: 'babel-eslint'

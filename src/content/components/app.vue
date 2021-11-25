@@ -2,16 +2,16 @@
  * @Author: migor
  * @Date: 2021-11-25 20:53:19
  * @LastEditors: migor
- * @LastEditTime: 2021-11-25 21:04:16
+ * @LastEditTime: 2021-11-25 21:46:41
  * @Description: file content
 -->
 <template>
-	<div class="content_page">
-		content_page
-		<div class="content_page_main">
-			content_page_main
-		</div>
-	</div>
+  <div class="content_page">
+    content_page
+    <div class="content_page_main">
+      content_page_main
+    </div>
+  </div>
 </template>
 
 <script>
